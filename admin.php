@@ -1,8 +1,8 @@
 <?php 
 session_start();
-if($_SESSION['role'] != 'user') {
+if($_SESSION['role'] != 'admin') {
     session_destroy();
-    header('Localtion: index.php');
+    header('Location: index.php');
 }
 
 
@@ -14,7 +14,7 @@ if($_SESSION['role'] != 'user') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Selamat Datang</title>
+    <title>Admin</title>
     <style>
         body {
             background-color: #f8f9fa;
@@ -40,8 +40,9 @@ if($_SESSION['role'] != 'user') {
 </head>
 <body>
     <div class="welcome-container">
-        <h1>Selamat Datang <?= $_SESSION['name']; ?></h1>
+        <h1>Selamat Datang Administrator <?= $_SESSION['name']; ?></h1>
         <div class="mt-4">
+            <a href="#" class="btn btn-primary mr-2">Kelola Pengguna</a>
             <a href="backend/logout.php" class="btn btn-danger">Logout</a>
         </div>
     </div>

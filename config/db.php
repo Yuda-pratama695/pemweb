@@ -3,7 +3,7 @@
 $DBHOST = 'localhost';
 $DBUSER = 'root';
 $DBPASSWORD = '';
-$DBNAME = 'pemweb-db';
+$DBNAME = 'pemweb_db';
 
 
 $db_connect = mysqli_connect($DBHOST,$DBUSER,$DBPASSWORD,$DBNAME);
