@@ -75,7 +75,7 @@
 <body>
     <div class="login-container">
         <h2 class="text-center">Halaman Login</h2>
-        <form action="./backend/admin.php" method="post">
+        <form action="./backend/login.php" method="post">
             <div class="input-group">
                 <input type="email" name="email" id="email" class="input-group__input" required>
                 <label for="email" class="input-group__label">Email</label>
@@ -84,10 +84,8 @@
                 <input type="password" name="password" id="password" class="input-group__input" required>
                 <label for="password" class="input-group__label">Password</label>
             </div>
-            <button type="submit" name="submit" id="login">Login</button>
+            <button type="submit" name="submit" id="submit">Login</button>
         </form>
     </div>
 </body>
 </html>
-
-
